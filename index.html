@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <script src="assets/js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="menubar">
+        <div class="container-menu">
+            <div class="menu" onclick="changeMenuTo('homePage')">Home</div>
+            <div class="menu" onclick="changeMenuTo('aboutPage')">About</div>
+            <div class="menu" onclick="changeMenuTo('contactPage')">Contact Us</div>
+        </div>
+    </div>
+
+    <div class="header">
+      <div class="header-logo">My Website</div>
+      <div class="header-list">
+        <ul>
+          <li class="border-left border-right">
+            <a class="a-putih" onclick="changeMenuTo('homePage')">Home</a>
+          </li>
+          <li class="border-right">
+            <a class="a-putih" onclick="changeMenuTo('aboutPage')">About</a>
+          </li>
+          <li class="border-right">
+            <a class="a-putih" onclick="changeMenuTo('contactPage')">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="main-list">
+        <ul>
+          <li>
+            <a class="a-hitam" onclick="changeMenuTo('homePage')">Home</a>
+          </li>
+          <li>
+            <a class="a-hitam" onclick="changeMenuTo('aboutPage')">About</a>
+          </li>
+          <li>
+            <a class="a-hitam" onclick="changeMenuTo('contactPage')">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="homePage" class="hide-page">
+        <div class="contents">
+          <h3>Asyik! Belajar Basic Coding Gratis, Bisa Dapat Beasiswa</h3>
+          <img src="assets/image/ngoding.jpeg">
+          <h5>Sumber: www.pexels.com</h5>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+          <p>
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de   Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+          </p>
+          <p>
+            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+          </p>
+        </div>
+      </div>
+
+      <div id="aboutPage" class="hide-page">
+        <div class="contentsAbout">
+          <h3>My Curriculum Vitae</h3>
+          <img src="assets/image/cv1.jpg">
+          <img src="assets/image/cv2.jpg">
+        </div>
+      </div>
+
+      <div id="contactPage" class="hide-page">
+        <div class="contentsContact">
+          <h3>My Contact</h3>
+          <p>
+            Email: fauzan.muhtadi@gmail.com
+          </p>
+          <p>
+            Phone: +62 857-2416-4498
+          </p>
+          <br>
+          <p>Thank you!</p>
+          <p>:)</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h6>Copyright &copy; 2020</h6>
+    </div>
+  </body>
+</html>
