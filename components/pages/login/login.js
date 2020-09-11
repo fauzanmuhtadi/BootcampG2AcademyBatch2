@@ -15,6 +15,7 @@ class Login extends Component {
   dataPass = () => {
     if (this.state.password === "admin") {
       alert('Welcome, Fauzan!')
+      this.props.ubahLogin()
     } else {
       alert('Invalid password!!')
     }
@@ -38,7 +39,7 @@ class Login extends Component {
             <TextInput
               style={styles.inputan}
               textContentType="password"
-              placeHolder="Password"
+              placeholder="Password"
               placeholderTextColor="white"
               secureTextEntry={true}
               onChangeText={text => this.setState({password:text})}
