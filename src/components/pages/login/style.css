@@ -1,0 +1,33 @@
+h2 {
+    text-align: center;
+}
+
+.form {
+    text-align: right;
+    border: 1px solid black;
+    justify-content: flex-start;
+    margin-left: 40%;
+    margin-right: 40%;
+    display: flex;
+    width: 20%;
+    padding: 20px;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+label {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+p {
+    text-align: center;
+    cursor: pointer;
+}
+
+.margin {
+    margin-right: 30px;
+    margin-left: 30px;
+}
