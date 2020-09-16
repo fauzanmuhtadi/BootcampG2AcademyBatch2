@@ -1,0 +1,66 @@
+.jumbotron {
+    background-image: url(../image/ngoding.jpeg);
+    background-size: cover;
+    height: 800px;
+    margin-bottom: 0px;
+}
+
+.jumbotron .display-4 {
+    color: white;
+    margin-top: 500px;
+}
+
+.jumbotron .display-5 {
+    margin-top: 200px;
+    /* opacity: 0.5; */
+}
+
+/* .jumbotron .modal-body {
+    opacity: 0.5;
+} */
+
+.jumbotron .lead {
+    color: white;
+}
+
+.geserKanan {
+    margin-left: 10px;
+}
+
+.marginBot {
+    margin-bottom: 30px;
+}
+
+.jumbotron .homeLead {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
+    opacity: 0.7;
+    /* width: 500px; */
+}
+
+.jumbotron .modal-content {
+    width: 900px;
+    align-self: center;
+}
+
+.jumbotron .gambar {
+    width: 100%;
+}
+
+.keluar {
+    width: 70px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: -30px;
+    color: white;
+}
+
+.footer-black {
+    text-align: center;
+    margin-top: -30px;
+    color: black;
+}
