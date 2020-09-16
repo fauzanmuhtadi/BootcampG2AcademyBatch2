@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,131 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.Txt-alg-ctr {
+  text-align: center;
+}
+
+.Txt-alg-jtf {
+  text-align: justify;
+}
+
+.Flt-rgt {
+  float: right;
+}
+
+.Flt-lft {
+  float: left;
+}
+
+.Dsp-flx {
+  display: flex;
+}
+
+.Dsp-flxbx {
+  display: flexbox;
+}
+
+.Wdt100prn {
+  width: 100%;
+}
+
+.Wdt645prn {
+  width: 64.5%;
+}
+
+.Wdt35prn {
+  width: 35%;
+}
+
+.Brd-rds50prn {
+  border-radius: 50%;
+}
+
+.Ctr-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Mrgn-lft50px {
+  margin-left: 50px;
+}
+
+.Mrgn-rgt50px {
+  margin-right: 50px;
+}
+
+.Mrgn-top100px {
+  margin-top: 100px;
+}
+
+.Bdr-lft {
+  border-left: 3px solid black;
+}
+
+.Mrgn-btm50px {
+  margin-bottom: 50px;
+}
+
+.Pdg40px {
+  padding-left: 40px;
+}
+
+.Ls-stl-sqr {
+  list-style-type: square;
+}
+
+li {
+  list-style: none;
+}
+
+/* * {box-sizing: border-box} */
+
+.container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.mso {width: 95%; background-color: #808080;}
+.srf {width: 70%; background-color: #808080;}
+.rdi {width: 80%; background-color: #808080;}
+.mlt {width: 75%; background-color: #808080;}
+.crd {width: 60%; background-color: #808080;}
+
+.ind {width: 100%; background-color: #808080;}
+.eng {width: 80%; background-color: #808080;}
+.arb {width: 80%; background-color: #808080;}
+
+.banner-text {
+  background-color: lightgrey;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.formLogin {;
+  margin: 10% 25% 0% 25%;
+  font-size: 30px;
+}
+
+.input {
+  width: 100%;
+  height: 30px;
+  margin: 20px 0px 20px 0px;
+}
+
+.input-login {
+  height: 40px;
+  width: 100px;
+  font-size: 20px;
 }
