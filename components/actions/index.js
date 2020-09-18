@@ -1,7 +1,7 @@
 import { setLogin, setLogout } from "./auth/auth";
-// import { enterName, inPut } from './login/login';
+import { setData } from './data/data';
 // import { inPut, delNama } from './login/login';
 // import { inputNewEmpl } from './addemployee/addemployee'
 
-export { setLogin, setLogout };
+export { setLogin, setLogout, setData };
 // export { setLogin, setLogout, inPut, delNama, inputNewEmpl };

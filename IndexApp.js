@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { connect } from 'react-redux';
+import { setData } from './components/actions'
 
 
 const Stack = createStackNavigator();
@@ -25,6 +26,30 @@ function HomeTabScreen() {
 }
 
 class IndexApp extends Component {
+  componentDidMount() {
+    this.takePhotos()
+    this.liat()
+  }
+
+  liat = () => {
+    let apa = this.props.hehe
+    console.log(apa);
+  }
+
+  takePhotos = () => {
+    fetch('https://jsonplaceholder.typicode.com/photos') //albumId 1-100, id 1-5000, title, url, thumbnailUrl
+        .then(response => response.json())
+        .then((json) => {
+            let newPhotos = json
+            newPhotos.splice(2, 4998)
+            // await this.setState({
+            //     photos: newPhotos
+            // })
+            this.props.saveData(newPhotos)
+        })
+        .catch(error => console.log('Parsing failed!', error))
+  }
+
   render() { 
     return (
         <NavigationContainer>
@@ -46,7 +71,12 @@ class IndexApp extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  isLogin: state.auth.isLoggedIn
+  isLogin: state.auth.isLoggedIn,
+  hehe: state.data.nihData
+})
+
+const mapDispatchToProps = (dispatch) => ({
+  saveData: (datas) => dispatch(setData(datas))
 })
  
-export default connect(mapStateToProps, null)(IndexApp);
+export default connect(mapStateToProps, mapDispatchToProps)(IndexApp);

@@ -1,20 +1,48 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
 import { connect } from 'react-redux';
+import Sqlite from '../../../config/sqlite/sqlite';
 import { setLogin } from '../../actions';
 
+const db = new Sqlite
+// var SQLite = require('react-native-sqlite-storage')
+// var db = SQLite.openDatabase({name: 'test.db', createFromLocation: '~sqliteex.db'})
 
 class FormLogin extends Component {
   constructor(props) {
     super(props);
     this.state={
-      email: 'f****n@admin.com',
-      password: ''
+      email: '',
+      password: '',
+      keyword: ''
+      // email: 'f****n@admin.com',
+      // password: ''
     }
   }
 
+  componentDidMount() {
+    this.getProducts()
+  }
+
+  getProducts = () => {
+    let logins = [];
+    db.listlogin().then(async (data) => {
+      logins = data;
+      // console.info(logins)
+      // console.info(data)
+      await this.setState({
+        // logins
+        email: logins[0].email,
+        password: logins[0].password,
+      })
+      console.info(logins)
+    }).catch((err) => {
+      console.log(err)
+    })
+  }
+
   login = () => {
-    if (this.state.password === "admin") {
+    if (this.state.keyword === this.state.password) {
       alert('Welcome, Fauzan!')
       this.props.changeLogin()
     } else {
@@ -24,7 +52,7 @@ class FormLogin extends Component {
   
   setValue = (isi) => {
     this.setState({
-      password: isi
+      keyword: isi
     })
   }
     
